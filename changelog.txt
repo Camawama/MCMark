@@ -1,0 +1,18 @@
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [0.1.0] - 2026-07-19 (benchmark spec 1.0.0, result schema 1)
+
+### Added
+- Deterministic 8-phase benchmark suite: warmup, idle tick, chunk generation, entity stress,
+  item stress, redstone, fluids, client render (FPS).
+- One-click official benchmark world creation from the title screen; auto-start on load.
+- Composite scoring (overall / server / client) against fixed spec-1.0.0 reference baselines.
+- Standard-run flag system (seed, suite, video settings, interference, player count, ...).
+- Performance-mod detection with PURE/OPTIMIZED classification and category breakdown.
+- Environment fingerprint (OS/CPU/GPU/Java/JVM args/settings) and full mod list in results.
+- Local JSON result store with tamper-evidence hashing; /mcmark command suite; progress HUD;
+  results browser screen.
+- Upload client for the future MCMark leaderboard (disabled until the website launches).

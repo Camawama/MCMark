@@ -1,0 +1,18 @@
+{
+  "mcmark.button.title": "MCMark",
+  "mcmark.button.title.tooltip": "Benchmark your mods and modpacks",
+
+  "mcmark.screen.menu.title": "MCMark — Minecraft Benchmark",
+  "mcmark.screen.menu.subtitle": "Mod %s · Benchmark Spec %s",
+  "mcmark.screen.menu.create_world": "Create Benchmark World",
+  "mcmark.screen.menu.create_world.tooltip": "Creates a world with the official MCMark seed and settings. The standard benchmark starts automatically after loading.",
+  "mcmark.screen.menu.results": "View Results",
+  "mcmark.screen.menu.leaderboard": "Community Leaderboard (Coming Soon)",
+  "mcmark.screen.menu.leaderboard.tooltip": "The MCMark website with community leaderboards for mods and modpacks is under construction. Your results are saved locally and will be uploadable at launch.",
+
+  "mcmark.screen.results.title": "MCMark Results",
+  "mcmark.screen.results.upload": "Upload",
+  "mcmark.screen.results.folder": "Open Folder",
+  "mcmark.screen.results.none": "No results yet — run a benchmark first!",
+  "mcmark.screen.results.hint": "Run a benchmark to see results here."
+}
