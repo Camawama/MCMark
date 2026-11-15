@@ -3,6 +3,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.1] - 2026-11-11
+
+### Fixed
+- `/mcmark status`, `results`, `mods` and `env` ask for operator level 2, as `run`, `abort`, `label` and `upload`
+  do. They had no check: any player on a server could have its OS, Java version, heap, CPU and mod list printed,
+  and `results` reads and parses every result file each time it is run. In singleplayer they need a world with
+  cheats on, which the benchmark world is.
+
 ## [0.1.0] - 2026-07-19 (benchmark spec 1.0.0, result schema 1)
 
 ### Added

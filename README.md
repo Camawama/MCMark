@@ -37,6 +37,9 @@ and compare.
 | `/mcmark mods` | Show detected performance mods and run classification |
 | `/mcmark env` | Show the environment fingerprint |
 
+Every `/mcmark` command asks for operator level 2 (in singleplayer: a world with cheats on, as the benchmark
+world is).
+
 Dedicated servers can run the suite headless (server phases only; flagged accordingly). For
 CI/automation, launch with `-Dmcmark.autorun=standard|quick` (or env `MCMARK_AUTORUN`) and a
 run starts automatically shortly after server start — results land in `mcmark/results/` and

@@ -38,8 +38,14 @@ public final class MCMarkCommands {
                 .then(Commands.literal("abort")
                         .requires(src -> src.hasPermission(2))
                         .executes(MCMarkCommands::abort))
-                .then(Commands.literal("status").executes(MCMarkCommands::status))
-                .then(Commands.literal("results").executes(MCMarkCommands::results))
+                // Operators too: these had no check, and any player could have the server's OS, Java, heap, CPU and mod
+                // list printed, and every result file read and parsed per call.
+                .then(Commands.literal("status")
+                        .requires(src -> src.hasPermission(2))
+                        .executes(MCMarkCommands::status))
+                .then(Commands.literal("results")
+                        .requires(src -> src.hasPermission(2))
+                        .executes(MCMarkCommands::results))
                 .then(Commands.literal("label")
                         .requires(src -> src.hasPermission(2))
                         .then(Commands.argument("name", StringArgumentType.greedyString())
@@ -47,8 +53,12 @@ public final class MCMarkCommands {
                 .then(Commands.literal("upload")
                         .requires(src -> src.hasPermission(2))
                         .executes(MCMarkCommands::upload))
-                .then(Commands.literal("mods").executes(MCMarkCommands::mods))
-                .then(Commands.literal("env").executes(MCMarkCommands::env)));
+                .then(Commands.literal("mods")
+                        .requires(src -> src.hasPermission(2))
+                        .executes(MCMarkCommands::mods))
+                .then(Commands.literal("env")
+                        .requires(src -> src.hasPermission(2))
+                        .executes(MCMarkCommands::env)));
     }
 
     private static com.mojang.brigadier.builder.LiteralArgumentBuilder<CommandSourceStack> suiteBranch(Suite suite) {
