@@ -7,7 +7,7 @@ comparable performance score. It's not a profiler (see spark/Observable for that
 *benchmark*: the same workload, every time, for everyone, so players can compare mods and
 modpacks, and mod developers can compete on performance.
 
-- **Minecraft**: 1.20.1 · **Loader**: Forge 47.4+
+- **Minecraft**: 1.20.1 · **Loader**: Forge 47.3.10+ · client and/or server, no other mod needed
 - **Package**: `net.camacraft.mcmark` · **Mod id**: `mcmark`
 
 ## How it works
@@ -90,4 +90,4 @@ category, hardware class, and spec version — is under construction. The mod is
 
 ## License
 
-All Rights Reserved (see LICENSE.txt).
+GPL-3.0 (see LICENSE.txt).
